@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registration Form</title>
+</head>
+<body>
+
+<h2>Student Registration Form</h2>
+
+<form action="register.php" method="post">
+
+    <!-- Text fields -->
+    <label for="fullname">Full Name:</label><br>
+    <input type="text" id="fullname" name="fullname" required><br><br>
+
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email" required><br><br>
+
+    <!-- Radio buttons -->
+    <label>Gender:</label><br>
+    <input type="radio" id="male" name="gender" value="Male">
+    <label for="male">Male</label>
+
+    <input type="radio" id="female" name="gender" value="Female">
+    <label for="female">Female</label><br><br>
+
+    <!-- Checkboxes -->
+    <label>Hobbies:</label><br>
+    <input type="checkbox" id="reading" name="hobbies[]" value="Reading">
+    <label for="reading">Reading</label>
+
+    <input type="checkbox" id="sports" name="hobbies[]" value="Sports">
+    <label for="sports">Sports</label>
+
+    <input type="checkbox" id="music" name="hobbies[]" value="Music">
+    <label for="music">Music</label><br><br>
+
+    <!-- Drop-down list -->
+    <label for="country">Country:</label><br>
+    <select id="country" name="country" required>
+        <option value="">Select Country</option>
+        <option value="Philippines">Philippines</option>
+        <option value="USA">USA</option>
+        <option value="Japan">Japan</option>
+        <option value="Korea">Korea</option>
+    </select><br><br>
+
+    <!-- Submit button -->
+    <input type="submit" value="Register">
+
+</form>
+
+</body>
+</html>
