@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Registration Form</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #eef2f7;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            background-color: white;
+            width: 420px;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0px 4px 12px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 25px;
+        }
+
+        .form-group {
+            margin-bottom: 16px;
+        }
+
+        label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 6px;
+            color: #444;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #cccccc;
+            border-radius: 6px;
+            box-sizing: border-box;
+            font-size: 14px;
+        }
+
+        input:focus,
+        select:focus {
+            outline: none;
+            border-color: #3b82f6;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            background-color: #3b82f6;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        button:hover {
+            background-color: #2563eb;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <h2>Event Registration Form</h2>
+
+    <form>
+
+        <div class="form-group">
+            <label for="name">Participant Name</label>
+            <input type="text" id="name" placeholder="Enter participant name">
+        </div>
+
+        <div class="form-group">
+            <label for="school">School</label>
+            <input type="text" id="school" placeholder="Enter school name">
+        </div>
+
+        <div class="form-group">
+            <label for="grade">Grade Level</label>
+            <select id="grade">
+                <option>Select Grade Level</option>
+                <option>Grade 7</option>
+                <option>Grade 8</option>
+                <option>Grade 9</option>
+                <option>Grade 10</option>
+                <option>Grade 11</option>
+                <option>Grade 12</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="event">Event Category</label>
+            <select id="event">
+                <option>Select Event Category</option>
+                <option>Academic Competition</option>
+                <option>Sports Event</option>
+                <option>Cultural Presentation</option>
+                <option>Science Fair</option>
+                <option>Workshop</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="contact">Contact Number</label>
+            <input type="tel" id="contact" placeholder="Enter contact number">
+        </div>
+
+        <button type="submit">Register</button>
+
+    </form>
+
+</div>
+
+</body>
+</html>
