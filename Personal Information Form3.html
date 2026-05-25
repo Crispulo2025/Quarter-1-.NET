@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Personal Information Form</title>
+
+<style>
+body {
+    font-family: Arial, sans-serif;
+    background-color: #eef2f3;
+}
+
+.form-container {
+    width: 400px;
+    margin: 50px auto;
+    background-color: #ffffff;
+    padding: 25px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+textarea {
+    resize: none;
+    height: 80px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #1e7e34;
+}
+</style>
+</head>
+
+<body>
+
+<div class="form-container">
+    <h2>Personal Information Form</h2>
+
+    <form>
+        <label>First Name</label>
+        <input type="text" name="firstname" required>
+
+        <label>Last Name</label>
+        <input type="text" name="lastname" required>
+
+        <label>Date of Birth</label>
+        <input type="date" name="dob" required>
+
+        <label>Contact Number</label>
+        <input type="tel" name="contact" required>
+
+        <label>Home Address</label>
+        <textarea name="address" required></textarea>
+
+        <button type="submit">Submit</button>
+    </form>
+</div>
+
+</body>
+</html>
