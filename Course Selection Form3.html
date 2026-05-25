@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Course Selection Form</title>
+
+<style>
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f7fa;
+}
+
+.form-container {
+    width: 380px;
+    margin: 60px auto;
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 12px rgba(0,0,0,0.1);
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #aaa;
+    margin-bottom: 20px;
+    background-color: #f9f9f9;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+</style>
+</head>
+
+<body>
+
+<div class="form-container">
+    <h2>Course Selection Form</h2>
+
+    <form>
+        <label for="course">Select Your Course / Strand</label>
+        <select name="course" id="course">
+            <option value="stem">STEM</option>
+            <option value="abm">ABM</option>
+            <option value="humss">HUMSS</option>
+            <option value="gas">GAS</option>
+            <option value="ict">ICT</option>
+        </select>
+
+        <button type="submit">Submit</button>
+    </form>
+</div>
+
+</body>
+</html>
