@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Student Portal Registration</title>
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background: linear-gradient(135deg, #e3f2fd, #f5f7fb);
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        padding: 15px;
+    }
+
+    .container {
+        width: 100%;
+        max-width: 600px;
+        background: #ffffff;
+        padding: 30px;
+        border-radius: 14px;
+        box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+        border: 1px solid #e0e6ef;
+    }
+
+    h2 {
+        text-align: center;
+        margin-bottom: 10px;
+        color: #2c3e50;
+    }
+
+    p {
+        text-align: center;
+        margin-bottom: 20px;
+        color: #666;
+    }
+
+    .form-group {
+        margin-bottom: 14px;
+    }
+
+    label {
+        display: block;
+        margin-bottom: 6px;
+        font-weight: bold;
+        color: #34495e;
+    }
+
+    input, select, textarea {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccd6e0;
+        border-radius: 6px;
+        font-size: 14px;
+        box-sizing: border-box;
+        transition: 0.2s ease;
+    }
+
+    textarea {
+        resize: vertical;
+        height: 80px;
+    }
+
+    input:focus, select:focus, textarea:focus {
+        outline: none;
+        border-color: #4a90e2;
+        box-shadow: 0 0 5px rgba(74,144,226,0.3);
+    }
+
+    .row {
+        display: flex;
+        gap: 10px;
+    }
+
+    .row .form-group {
+        flex: 1;
+    }
+
+    .btn-group {
+        display: flex;
+        gap: 10px;
+        margin-top: 15px;
+    }
+
+    button {
+        flex: 1;
+        padding: 12px;
+        border: none;
+        border-radius: 6px;
+        font-size: 16px;
+        cursor: pointer;
+        transition: 0.3s ease;
+    }
+
+    .submit-btn {
+        background-color: #1e90ff;
+        color: white;
+    }
+
+    .submit-btn:hover {
+        background-color: #187bcd;
+        transform: translateY(-2px);
+    }
+
+    .reset-btn {
+        background-color: #e74c3c;
+        color: white;
+    }
+
+    .reset-btn:hover {
+        background-color: #c0392b;
+        transform: translateY(-2px);
+    }
+
+    @media (max-width: 600px) {
+        .row {
+            flex-direction: column;
+        }
+    }
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <h2>Student Portal Registration</h2>
+    <p>Please fill out the form carefully</p>
+
+    <form>
+
+        <div class="row">
+            <div class="form-group">
+                <label>First Name</label>
+                <input type="text" placeholder="First name" required minlength="2">
+            </div>
+
+            <div class="form-group">
+                <label>Last Name</label>
+                <input type="text" placeholder="Last name" required minlength="2">
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label>Email Address</label>
+            <input type="email" placeholder="Enter email" required>
+        </div>
+
+        <div class="form-group">
+            <label>Contact Number</label>
+            <input type="tel" placeholder="09XXXXXXXXX" required pattern="[0-9]{11}">
+        </div>
+
+        <div class="form-group">
+            <label>Age</label>
+            <input type="number" min="10" max="100" required>
+        </div>
+
+        <div class="form-group">
+            <label>Course / Strand</label>
+            <select required>
+                <option value="">Select Course</option>
+                <option>BS Computer Science</option>
+                <option>BS Engineering</option>
+                <option>BS Business Administration</option>
+                <option>Senior High School - STEM</option>
+                <option>Senior High School - HUMSS</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label>Address</label>
+            <textarea placeholder="Enter full address" required></textarea>
+        </div>
+
+        <div class="form-group">
+            <label>Password</label>
+            <input type="password" placeholder="Create password" required minlength="6">
+        </div>
+
+        <div class="btn-group">
+            <button type="submit" class="submit-btn">Submit</button>
+            <button type="reset" class="reset-btn">Reset</button>
+        </div>
+
+    </form>
+
+</div>
+
+</body>
+</html>
