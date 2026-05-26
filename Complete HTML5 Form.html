@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Complete HTML5 Form</title>
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background: linear-gradient(135deg, #eef2f7, #d9e4f5);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        margin: 0;
+        padding: 15px;
+    }
+
+    .container {
+        width: 100%;
+        max-width: 650px;
+        background: #ffffff;
+        padding: 30px;
+        border-radius: 14px;
+        box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+        border: 1px solid #e6e9ef;
+    }
+
+    h2 {
+        text-align: center;
+        margin-bottom: 20px;
+        color: #2c3e50;
+    }
+
+    .form-group {
+        margin-bottom: 14px;
+    }
+
+    label {
+        display: block;
+        margin-bottom: 6px;
+        font-weight: bold;
+        color: #34495e;
+    }
+
+    input, select, textarea {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccd6e0;
+        border-radius: 8px;
+        font-size: 14px;
+        box-sizing: border-box;
+        transition: 0.3s ease;
+    }
+
+    textarea {
+        height: 90px;
+        resize: vertical;
+    }
+
+    input:focus, select:focus, textarea:focus {
+        border-color: #4a90e2;
+        box-shadow: 0 0 6px rgba(74,144,226,0.3);
+        outline: none;
+    }
+
+    .row {
+        display: flex;
+        gap: 10px;
+    }
+
+    .row .form-group {
+        flex: 1;
+    }
+
+    /* Radio & Checkbox styling */
+    .inline-group {
+        display: flex;
+        gap: 15px;
+        flex-wrap: wrap;
+    }
+
+    .inline-group label {
+        font-weight: normal;
+        display: flex;
+        align-items: center;
+        gap: 6px;
+    }
+
+    .btn {
+        width: 100%;
+        padding: 12px;
+        background-color: #1e90ff;
+        color: white;
+        border: none;
+        border-radius: 8px;
+        font-size: 16px;
+        cursor: pointer;
+        transition: 0.3s ease;
+        margin-top: 10px;
+    }
+
+    .btn:hover {
+        background-color: #187bcd;
+        transform: translateY(-2px);
+        box-shadow: 0 6px 12px rgba(30,144,255,0.3);
+    }
+
+    @media (max-width: 600px) {
+        .row {
+            flex-direction: column;
+        }
+    }
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <h2>Complete HTML5 Registration Form</h2>
+
+    <form>
+
+        <div class="row">
+            <div class="form-group">
+                <label>First Name</label>
+                <input type="text" placeholder="Enter first name" required>
+            </div>
+
+            <div class="form-group">
+                <label>Last Name</label>
+                <input type="text" placeholder="Enter last name" required>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label>Email Address</label>
+            <input type="email" placeholder="Enter email" required>
+        </div>
+
+        <div class="form-group">
+            <label>Password</label>
+            <input type="password" placeholder="Create password" required minlength="6">
+        </div>
+
+        <div class="form-group">
+            <label>Gender</label>
+            <div class="inline-group">
+                <label><input type="radio" name="gender"> Male</label>
+                <label><input type="radio" name="gender"> Female</label>
+                <label><input type="radio" name="gender"> Prefer not to say</label>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label>Skills</label>
+            <div class="inline-group">
+                <label><input type="checkbox"> HTML</label>
+                <label><input type="checkbox"> CSS</label>
+                <label><input type="checkbox"> JavaScript</label>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label>Course / Strand</label>
+            <select required>
+                <option>Select Course</option>
+                <option>BSIT</option>
+                <option>BSCS</option>
+                <option>BS Engineering</option>
+                <option>STEM</option>
+                <option>HUMSS</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label>Address</label>
+            <textarea placeholder="Enter full address" required></textarea>
+        </div>
+
+        <button type="submit" class="btn">Submit Form</button>
+
+    </form>
+
+</div>
+
+</body>
+</html>
