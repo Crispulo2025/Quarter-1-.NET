@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Inline vs Internal CSS Comparison</title>
+
+    <style>
+        p {
+            color: green;
+            font-size: 18px;
+        }
+
+        h2 {
+            color: purple;
+            text-align: left;
+        }
+    </style>
+
+</head>
+<body>
+
+    <!-- Inline CSS (applied directly to the element) -->
+    <h1 style="color: red; text-align: center;">
+        This heading uses INLINE CSS
+    </h1>
+
+    <!-- Internal CSS (defined in the <style> section) -->
+    <h2>
+        This subheading uses INTERNAL CSS
+    </h2>
+
+    <p>
+        This paragraph also uses INTERNAL CSS for styling.
+    </p>
+
+    <p style="color: blue; font-weight: bold;">
+        This paragraph uses INLINE CSS instead of internal CSS.
+    </p>
+
+</body>
+</html>
