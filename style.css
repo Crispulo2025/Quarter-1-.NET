@@ -1,16 +1,15 @@
 body {
-    background-color: #fff3cd;
     font-family: Arial, sans-serif;
+    background-color: #f0f8ff;
 }
 
 h1 {
-    color: darkred;
+    color: darkblue;
     text-align: center;
-    font-size: 32px;
 }
 
 p {
     color: green;
-    font-size: 20px;
+    font-size: 18px;
     text-align: justify;
 }
