@@ -1,23 +1,20 @@
+<!-- index.html -->
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Inline CSS Override Example</title>
-
-    <!-- Link to external CSS -->
+    <meta charset="UTF-8">
+    <title>External CSS Demo</title>
     <link rel="stylesheet" href="style.css">
-
 </head>
 <body>
 
-    <h1>CSS Override Example</h1>
+    <h1 class="highlight">Welcome</h1>
 
-    <!-- Uses external CSS -->
-    <p>This paragraph uses the external CSS style.</p>
+    <p class="highlight">This paragraph shares the same style rule.</p>
 
-    <!-- Inline CSS overrides external CSS -->
-    <p style="color: red;">
-        This paragraph uses inline CSS to override the external CSS color.
-    </p>
+    <div class="highlight">
+        This div is also affected by the same external CSS rule.
+    </div>
 
 </body>
 </html>
