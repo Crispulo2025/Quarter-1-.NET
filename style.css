@@ -1,15 +1,4 @@
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f8ff;
-}
-
-h1 {
-    color: darkblue;
-    text-align: center;
-}
-
 p {
     color: green;
     font-size: 18px;
-    text-align: justify;
 }
