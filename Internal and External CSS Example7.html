@@ -1,0 +1,54 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Internal and External CSS Example</title>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Internal CSS -->
+    <style>
+        .special-section {
+            background-color: lightyellow;
+            border: 2px solid orange;
+            padding: 15px;
+            margin-top: 20px;
+        }
+
+        .special-section h2 {
+            color: darkred;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>My Webpage</h1>
+    </header>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+    </nav>
+
+    <main>
+        <p>
+            This webpage uses external CSS for general styling and internal CSS
+            for page-specific styling.
+        </p>
+
+        <div class="special-section">
+            <h2>Special Announcement</h2>
+            <p>
+                This section is styled using internal CSS because it is unique
+                to this webpage only.
+            </p>
+        </div>
+    </main>
+
+</body>
+</html>
