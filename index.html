@@ -1,20 +1,22 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Inline CSS Example</title>
+    <title>Inline CSS Override Example</title>
+
+    <!-- Link to external CSS -->
+    <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
 
-    <h1 style="color: darkblue; text-align: center; font-family: Arial;">
-        Inline CSS Example
-    </h1>
+    <h1>CSS Override Example</h1>
 
-    <p style="color: green; font-size: 18px; text-align: justify;">
-        Each element must be styled individually using inline CSS.
-    </p>
+    <!-- Uses external CSS -->
+    <p>This paragraph uses the external CSS style.</p>
 
-    <p style="color: green; font-size: 18px; text-align: justify;">
-        This becomes repetitive and hard to manage in large projects.
+    <!-- Inline CSS overrides external CSS -->
+    <p style="color: red;">
+        This paragraph uses inline CSS to override the external CSS color.
     </p>
 
 </body>
